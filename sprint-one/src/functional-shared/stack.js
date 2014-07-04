@@ -1,11 +1,12 @@
 var makeStack = function() {
-  return stackInstance = {
+  var stackInstance = {
     _storage: {},
     _size: 0,
     push: stackMethods.push,
     pop: stackMethods.pop,
     size: stackMethods.size
   }
+  return stackInstance;
 };
 
 var stackMethods = {
