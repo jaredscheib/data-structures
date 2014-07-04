@@ -14,7 +14,7 @@ var makeQueue = function(){
   };
 
   someInstance.dequeue = function(){
-    if( this.size() < 1 ) return;
+    if( (top - bottom) < 1 ) return;
     var result = someInstance[bottom];
     delete someInstance[bottom];
     bottom++;
